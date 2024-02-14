@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="Create README.md">
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="feat: insomnia file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -102,7 +104,7 @@
       <updated>1707874457229</updated>
       <workItem from="1707874458298" duration="706000" />
       <workItem from="1707875214417" duration="909000" />
-      <workItem from="1707876135539" duration="350000" />
+      <workItem from="1707876135539" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="Create README.md">
       <option name="closed" value="true" />
@@ -112,7 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707876309073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: initial gateway">
+      <option name="closed" value="true" />
+      <created>1707876503358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707876503358</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: insomnia file">
+      <option name="closed" value="true" />
+      <created>1707876770818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707876770818</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,9 +138,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: initial gateway" />
     <MESSAGE value="feat: added spring security to gateway" />
     <MESSAGE value="Create README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create README.md" />
+    <MESSAGE value="feat: initial gateway" />
+    <MESSAGE value="feat: insomnia file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: insomnia file" />
   </component>
 </project>
