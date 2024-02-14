@@ -1,24 +1,12 @@
-import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import axios from "axios";
+import {useGreeting} from "./hooks/useGreeting.tsx";
 
-function App() {
 
-    const [message, setMessage] = useState({})
+export const App = () => {
 
-    const handleClick = () => {
-
-        axios({
-            method: "get",
-            url: "/server",
-            headers: {'Content-Type': 'application/json'},
-            withCredentials: true
-        }).then(response => response.data)
-            .then(setMessage)
-            .catch(setMessage)
-    }
+    const {message, onFetch} = useGreeting()
 
     return (
         <>
@@ -32,11 +20,10 @@ function App() {
             </div>
             <h1>Vite + React</h1>
 
-            <button onClick={handleClick}>Greeting</button>
+            <button onClick={onFetch}>Greeting</button>
             <div>{JSON.stringify(message)}</div>
 
         </>
     )
 }
 
-export default App
