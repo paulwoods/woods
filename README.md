@@ -2,9 +2,14 @@
 
 ## Gateway
 
+### PreRequisites
 1. install java21
-2. cd gateway
-3. ./gradlew bootRun
 
+### Run the project
+1. cd gateway
+2./gradlew bootRun
+
+### Verify that the gatewa is running
 In another terminal, enter:
 1. `curl localhost:8080/actuator/health`
+
