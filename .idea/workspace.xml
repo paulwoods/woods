@@ -4,30 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="docs: updated readme.md">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/ServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/test/java/org/mrpaulwoods/server/ServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="docs: updated readme and insomnia.">
+      <change afterPath="$PROJECT_DIR$/client/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insomnia.json" beforeDir="false" afterPath="$PROJECT_DIR$/insomnia.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/gateway">
@@ -98,11 +105,14 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "/home/mrpaulwoods/IdeaProjects/woods/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -124,10 +134,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="npm.dev" />
       <item itemvalue="Spring Boot.server" />
       <item itemvalue="Spring Boot.gateway" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -147,7 +173,7 @@
       <updated>1707874457229</updated>
       <workItem from="1707874458298" duration="706000" />
       <workItem from="1707875214417" duration="909000" />
-      <workItem from="1707876135539" duration="3060000" />
+      <workItem from="1707876135539" duration="5679000" />
     </task>
     <task id="LOCAL-00001" summary="Create README.md">
       <option name="closed" value="true" />
@@ -197,7 +223,31 @@
       <option name="project" value="LOCAL" />
       <updated>1707877513314</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: added server">
+      <option name="closed" value="true" />
+      <created>1707879267017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879267017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: configured gateway to route the server.">
+      <option name="closed" value="true" />
+      <created>1707879294243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879294243</updated>
+    </task>
+    <task id="LOCAL-00009" summary="docs: updated readme and insomnia.">
+      <option name="closed" value="true" />
+      <created>1707879317622</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879317622</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +261,9 @@
     <MESSAGE value="feat: insomnia file" />
     <MESSAGE value="docs: updated insomnia file" />
     <MESSAGE value="docs: updated readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: updated readme.md" />
+    <MESSAGE value="feat: added server" />
+    <MESSAGE value="feat: configured gateway to route the server." />
+    <MESSAGE value="docs: updated readme and insomnia." />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: updated readme and insomnia." />
   </component>
 </project>

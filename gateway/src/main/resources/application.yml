@@ -12,3 +12,9 @@ spring:
             - Path=/server/**
           filters:
             - StripPrefix=1
+        - id: client
+          uri: http://localhost:5173
+          predicates:
+            - Path=/**
+          filters:
+            - StripPrefix=0
