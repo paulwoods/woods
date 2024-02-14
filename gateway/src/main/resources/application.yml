@@ -1,8 +1,14 @@
 spring:
+  security:
+    user:
+      name: admin
+      password: password
   cloud:
     gateway:
       routes:
-        - id: after_route
-          uri: https://example.org
+        - id: server
+          uri: http://localhost:8081
           predicates:
-            - Cookie=mycookie,mycookievalue
+            - Path=/server/**
+          filters:
+            - StripPrefix=1
