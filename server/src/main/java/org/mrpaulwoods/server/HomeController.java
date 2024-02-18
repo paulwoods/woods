@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.Map;
 
 @RestController
@@ -19,7 +20,8 @@ public class HomeController {
     @GetMapping
     public ResponseEntity<Map<String,String>> greeting(Authentication authentication) {
         log.info("greeting()");
-        return ResponseEntity.ok(Map.of("message", "Hello " + authentication.getName()));
+        LocalDateTime time = LocalDateTime.now();
+        return ResponseEntity.ok(Map.of("message", "Hello " + authentication.getName() + " " + time));
     }
 
 }

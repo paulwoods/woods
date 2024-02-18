@@ -8,6 +8,7 @@ import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.MediaType;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -26,10 +27,15 @@ import org.springframework.security.oauth2.server.authorization.client.Registere
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
+import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.oauth2.server.authorization.settings.TokenSettings;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
+import org.springframework.security.web.util.matcher.MediaTypeRequestMatcher;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -55,18 +61,17 @@ public class SecurityConfig {
                 // Redirect to the login page when not authenticated from the
                 // authorization endpoint
                 .exceptionHandling((exceptions) -> exceptions
-//                        .defaultAuthenticationEntryPointFor(
-//                                new LoginUrlAuthenticationEntryPoint("/login"),
-//                                new MediaTypeRequestMatcher(MediaType.TEXT_HTML)
-//                        )
-                                .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login"))
-                );
+                        .defaultAuthenticationEntryPointFor(
+                                new LoginUrlAuthenticationEntryPoint("/login"),
+                                new MediaTypeRequestMatcher(MediaType.TEXT_HTML)
+                        )
+                )
 
                 // Accept access tokens for User Info and/or Client Registration
-//                .oauth2ResourceServer((resourceServer) -> resourceServer
-//                        .jwt(Customizer.withDefaults()));
+                .oauth2ResourceServer((resourceServer) -> resourceServer
+                        .jwt(Customizer.withDefaults()));
 
-        return http.build();
+        return http.cors(Customizer.withDefaults()).build();
     }
 
     @Bean
@@ -81,7 +86,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 );
 
-        return http.build();
+        return http.cors(Customizer.withDefaults()).build();
     }
 
     @Bean
@@ -105,7 +110,9 @@ public class SecurityConfig {
                 .clientSecret("secret")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
-//                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+
+                .redirectUri("http://gateway:8080/insomnia")
                 .redirectUri("http://web:8090/login/oauth2/code/oidc-client")
 //                .redirectUri("http://gateway:8080/login/oauth2/code/oidc-client")
                 .redirectUri("https://oidcdebugger.com/debug")
@@ -113,15 +120,20 @@ public class SecurityConfig {
                 .redirectUri("https://springone.io/authorized")
 //                .postLogoutRedirectUri("http://gateway:8080/")
                 .scope(OidcScopes.OPENID)
-//                .scope(OidcScopes.PROFILE)
-//                .scope("read")
-//                .clientSettings(ClientSettings.builder()
-//                        .requireAuthorizationConsent(false)
-//                        .requireProofKey(false)
-//                        .build())
+                .scope(OidcScopes.PROFILE)
+                .scope("read")
+                .clientSettings(clientSettings())
                 .build();
 
         return new InMemoryRegisteredClientRepository(oidcClient);
+    }
+
+    @Bean
+    ClientSettings clientSettings() {
+        return ClientSettings.builder()
+                .requireAuthorizationConsent(true)
+                .requireProofKey(true)
+                .build();
     }
 
     @Bean
@@ -164,5 +176,15 @@ public class SecurityConfig {
         return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
     }
 
-
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration config = new CorsConfiguration();
+        config.addAllowedHeader("*");
+        config.addAllowedMethod("*");
+        config.addAllowedOrigin("*");
+        config.setAllowCredentials(true);
+        source.registerCorsConfiguration("/**", config);
+        return source;
+    }
 }

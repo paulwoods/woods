@@ -1,12 +1,12 @@
 server:
   port: 8090
 
-logging:
-  level:
-    org:
-      springframework:
-        security:
-          oauth2: trace
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security:
+#          oauth2: trace
 
 spring:
   security:

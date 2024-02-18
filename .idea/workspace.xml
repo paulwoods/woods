@@ -4,29 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="refactor: UPDATED auth server">
-      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WelcomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/org/mrpaulwoods/web/WebApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="refactor: changed from 127.0.0.1 to named domains.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/web.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Insomnia.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/src/main/java/org/mrpaulwoods/auth/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/LogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WelcomeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/auth/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/mrpaulwoods/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/mrpaulwoods/auth/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insomnia.json" beforeDir="false" afterPath="$PROJECT_DIR$/insomnia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insomnia.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,9 @@
     <option name="groupingKeys">
       <option value="directory" />
     </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/auth">
@@ -113,10 +114,10 @@
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
     "Spring Boot.WebApplication.executor": "Run",
-    "Spring Boot.auth.executor": "Debug",
+    "Spring Boot.auth.executor": "Run",
     "Spring Boot.gateway.executor": "Run",
-    "Spring Boot.server.executor": "Debug",
-    "Spring Boot.web.executor": "Debug",
+    "Spring Boot.server.executor": "Run",
+    "Spring Boot.web.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "temurin-21",
     "kotlin-language-version-configured": "true",
@@ -131,17 +132,24 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "ts.external.directory.path": "/home/mrpaulwoods/IdeaProjects/woods/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/client/src/UseGreeting.tsx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/hooks" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.mrpaulwoods.web" />
+      <recent name="org.mrpaulwoods.server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,7 +236,7 @@
       <workItem from="1707874458298" duration="706000" />
       <workItem from="1707875214417" duration="909000" />
       <workItem from="1707876135539" duration="87299000" />
-      <workItem from="1708217572692" duration="11862000" />
+      <workItem from="1708217572692" duration="17765000" />
     </task>
     <task id="LOCAL-00001" summary="Create README.md">
       <option name="closed" value="true" />
@@ -342,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708272541317</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactor: changed from 127.0.0.1 to named domains.">
+      <option name="closed" value="true" />
+      <created>1708276507955</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276507955</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor: changed from 127.0.0.1 to named domains.">
+      <option name="closed" value="true" />
+      <created>1708276534235</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276534235</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +387,7 @@
     <MESSAGE value="refactor: client's greeting fetch moved to it's own hook." />
     <MESSAGE value="refactor: added auth server" />
     <MESSAGE value="refactor: UPDATED auth server" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: UPDATED auth server" />
+    <MESSAGE value="refactor: changed from 127.0.0.1 to named domains." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: changed from 127.0.0.1 to named domains." />
   </component>
 </project>
