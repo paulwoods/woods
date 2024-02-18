@@ -7,13 +7,13 @@ spring:
     gateway:
       routes:
         - id: server
-          uri: http://localhost:8081
+          uri: http://server:8081
           predicates:
             - Path=/server/**
           filters:
             - StripPrefix=1
         - id: client
-          uri: http://localhost:5173
+          uri: http://client:5173
           predicates:
             - Path=/**
           filters:

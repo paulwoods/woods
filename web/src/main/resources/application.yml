@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          oauth2: trace
+
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          spring:
+            issuer-uri: http://auth:9000
+        registration:
+          oidc-client:
+            provider: spring
+            client-id: oidc-client
+            client-secret: secret
+            scope: openid
+            authorization-grant-type: authorization_code
+            redirect-uri: http://web:8090/login/oauth2/code/oidc-client
+

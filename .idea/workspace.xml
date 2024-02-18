@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="refactor: added auth server">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/auth.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/server.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="refactor: UPDATED auth server">
+      <change afterPath="$PROJECT_DIR$/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/org/mrpaulwoods/web/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/test/java/org/mrpaulwoods/web/WebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/mrpaulwoods/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/org/mrpaulwoods/auth/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insomnia.json" beforeDir="false" afterPath="$PROJECT_DIR$/insomnia.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +46,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/web">
       <ProjectState />
     </projectState>
   </component>
@@ -85,6 +100,7 @@
     "Gradle.Build auth.executor": "Run",
     "Gradle.Build gateway.executor": "Run",
     "Gradle.Build server.executor": "Run",
+    "Gradle.Build web.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -96,9 +112,11 @@
     "Spring Boot.AuthApplication.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
+    "Spring Boot.WebApplication.executor": "Run",
     "Spring Boot.auth.executor": "Debug",
     "Spring Boot.gateway.executor": "Run",
     "Spring Boot.server.executor": "Debug",
+    "Spring Boot.web.executor": "Debug",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "temurin-21",
     "kotlin-language-version-configured": "true",
@@ -135,7 +153,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.server">
+  <component name="RunManager" selected="Spring Boot.web">
     <configuration name="auth" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="auth.main" />
@@ -161,6 +179,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="web" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.web.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
@@ -173,6 +198,7 @@
     </configuration>
     <list>
       <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.web" />
       <item itemvalue="Spring Boot.auth" />
       <item itemvalue="Spring Boot.server" />
       <item itemvalue="Spring Boot.gateway" />
@@ -202,7 +228,7 @@
       <workItem from="1707874458298" duration="706000" />
       <workItem from="1707875214417" duration="909000" />
       <workItem from="1707876135539" duration="87299000" />
-      <workItem from="1708217572692" duration="7737000" />
+      <workItem from="1708217572692" duration="11862000" />
     </task>
     <task id="LOCAL-00001" summary="Create README.md">
       <option name="closed" value="true" />
@@ -308,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708269364680</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor: UPDATED auth server">
+      <option name="closed" value="true" />
+      <created>1708272541317</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708272541317</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +362,7 @@
     <MESSAGE value="feat: added client" />
     <MESSAGE value="refactor: client's greeting fetch moved to it's own hook." />
     <MESSAGE value="refactor: added auth server" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: added auth server" />
+    <MESSAGE value="refactor: UPDATED auth server" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: UPDATED auth server" />
   </component>
 </project>

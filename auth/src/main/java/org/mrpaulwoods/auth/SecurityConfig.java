@@ -8,7 +8,6 @@ import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
-import org.springframework.http.MediaType;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -27,12 +26,10 @@ import org.springframework.security.oauth2.server.authorization.client.Registere
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
-import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.oauth2.server.authorization.settings.TokenSettings;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
-import org.springframework.security.web.util.matcher.MediaTypeRequestMatcher;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -92,9 +89,7 @@ public class SecurityConfig {
         UserDetails user = User.withUsername("user")
                 .password("password")
                 .authorities("read")
-//                .roles("USER")
                 .build();
-
         return new InMemoryUserDetailsManager(user);
     }
 
@@ -111,11 +106,12 @@ public class SecurityConfig {
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
 //                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .redirectUri("http://127.0.0.1:8080/login/oauth2/code/oidc-client")
+                .redirectUri("http://web:8090/login/oauth2/code/oidc-client")
+//                .redirectUri("http://gateway:8080/login/oauth2/code/oidc-client")
                 .redirectUri("https://oidcdebugger.com/debug")
                 .redirectUri("https://oauthdebugger.com/debug")
                 .redirectUri("https://springone.io/authorized")
-//                .postLogoutRedirectUri("http://127.0.0.1:8080/")
+//                .postLogoutRedirectUri("http://gateway:8080/")
                 .scope(OidcScopes.OPENID)
 //                .scope(OidcScopes.PROFILE)
 //                .scope("read")
