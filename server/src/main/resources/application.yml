@@ -1,7 +1,16 @@
 server:
   port: 8081
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          oauth2: trace
+
 spring:
   security:
-    user:
-      name: admin
-      password: password
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:9000
