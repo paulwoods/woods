@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="feat: added client">
-      <change afterPath="$PROJECT_DIR$/client/src/hooks/useGreeting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="refactor: added auth server" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +16,9 @@
     </option>
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/auth">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/gateway">
       <ProjectState />
     </projectState>
@@ -51,6 +49,10 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.2.1/b4014a04f217f0f48d15bc7d53906b6911ad855f/spring-security-core-6.2.1.jar!/org/springframework/security/authentication/ProviderManager.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-oauth2-authorization-server/1.2.1/64b9a5d4d21a7eedc66a7bab62f56a3e22174c68/spring-security-oauth2-authorization-server-1.2.1-sources.jar!/org/springframework/security/oauth2/server/authorization/authentication/OAuth2AuthorizationConsentAuthenticationProvider.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -69,8 +71,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build auth.executor": "Run",
     "Gradle.Build gateway.executor": "Run",
     "Gradle.Build server.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -78,8 +82,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthApplication.executor": "Run",
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.ServerApplication.executor": "Run",
+    "Spring Boot.auth.executor": "Debug",
     "Spring Boot.gateway.executor": "Run",
     "Spring Boot.server.executor": "Run",
     "git-widget-placeholder": "main",
@@ -95,6 +101,7 @@
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
     "ts.external.directory.path": "/home/mrpaulwoods/IdeaProjects/woods/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -108,7 +115,24 @@
       <recent name="$PROJECT_DIR$/client/src/hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.gateway">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.auth">
+    <configuration name="auth" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="auth.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="gateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="localhost" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -138,6 +162,7 @@
     </configuration>
     <list>
       <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.auth" />
       <item itemvalue="Spring Boot.server" />
       <item itemvalue="Spring Boot.gateway" />
     </list>
@@ -165,7 +190,8 @@
       <updated>1707874457229</updated>
       <workItem from="1707874458298" duration="706000" />
       <workItem from="1707875214417" duration="909000" />
-      <workItem from="1707876135539" duration="6696000" />
+      <workItem from="1707876135539" duration="87299000" />
+      <workItem from="1708217572692" duration="4830000" />
     </task>
     <task id="LOCAL-00001" summary="Create README.md">
       <option name="closed" value="true" />
@@ -247,7 +273,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707881946539</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor: client's greeting fetch moved to it's own hook.">
+      <option name="closed" value="true" />
+      <created>1707883101029</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707883101029</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: added auth server">
+      <option name="closed" value="true" />
+      <created>1708269343827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708269343828</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +307,8 @@
     <MESSAGE value="feat: configured gateway to route the server." />
     <MESSAGE value="docs: updated readme and insomnia." />
     <MESSAGE value="feat: added client" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added client" />
+    <MESSAGE value="refactor: client's greeting fetch moved to it's own hook." />
+    <MESSAGE value="refactor: added auth server" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: added auth server" />
   </component>
 </project>
