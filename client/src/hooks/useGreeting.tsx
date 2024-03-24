@@ -1,5 +1,5 @@
 import {useCallback, useState} from "react";
-import axios from "axios";
+import axios, {AxiosError} from "axios";
 
 export const useGreeting = () => {
 
@@ -12,7 +12,18 @@ export const useGreeting = () => {
             url: "/server",
         }).then(response => response.data)
             .then(setMessage)
-            .catch(setMessage)
+            .catch((e: unknown) => {
+
+                if (e instanceof AxiosError) {
+                    if (e.response?.status === 401) {
+                        // login
+                        window.location.href = `http://localhost:8080/login`
+                    }
+                }
+
+                console.log(e)
+                setMessage(JSON.stringify(e))
+            })
 
     }, [])
 
