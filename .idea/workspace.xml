@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="fix: changing to follow springdeveloper example">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useGreeting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useGreeting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/org/mrpaulwoods/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/mrpaulwoods/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/org/mrpaulwoods/server/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/auth">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/web">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.2.1/b4014a04f217f0f48d15bc7d53906b6911ad855f/spring-security-core-6.2.1.jar!/org/springframework/security/authentication/ProviderManager.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-oauth2-authorization-server/1.2.1/64b9a5d4d21a7eedc66a7bab62f56a3e22174c68/spring-security-oauth2-authorization-server-1.2.1-sources.jar!/org/springframework/security/oauth2/server/authorization/authentication/OAuth2AuthorizationConsentAuthenticationProvider.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2cKyDSjkx6EseOXTo3PCz4A7NsP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.docker-compose.yaml.postgres: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "Gradle.Build auth.executor": "Run",
+    "Gradle.Build gateway.executor": "Run",
+    "Gradle.Build server.executor": "Run",
+    "Gradle.Build web.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.ServerApplication.executor": "Run",
+    "Spring Boot.WebApplication.executor": "Run",
+    "Spring Boot.auth.executor": "Run",
+    "Spring Boot.gateway.executor": "Run",
+    "Spring Boot.server.executor": "Run",
+    "Spring Boot.web.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "temurin-21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "ts.external.directory.path": "/home/mrpaulwoods/IdeaProjects/woods/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/client/src/UseGreeting.tsx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/hooks" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.mrpaulwoods.web" />
+      <recent name="org.mrpaulwoods.server" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.server">
+    <configuration name="data.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/server/src/main/resources/data.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="auth" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="localhost" />
+      <module name="gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.server.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="web" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.mrpaulwoods.web.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.data.sql" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.web" />
+      <item itemvalue="Spring Boot.auth" />
+      <item itemvalue="Spring Boot.server" />
+      <item itemvalue="Spring Boot.gateway" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Database Script.data.sql" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+        <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-51f4b930" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bba6c0cf-b48d-4452-90c0-1a76062d2d36" name="Changes" comment="" />
+      <created>1707874457229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707874457229</updated>
+      <workItem from="1707874458298" duration="706000" />
+      <workItem from="1707875214417" duration="909000" />
+      <workItem from="1707876135539" duration="87299000" />
+      <workItem from="1708217572692" duration="18315000" />
+      <workItem from="1708305462092" duration="2061000" />
+      <workItem from="1710030957516" duration="831000" />
+      <workItem from="1711297709294" duration="9436000" />
+      <workItem from="1711307235829" duration="1460000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create README.md">
+      <option name="closed" value="true" />
+      <created>1707876309073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707876309073</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: initial gateway">
+      <option name="closed" value="true" />
+      <created>1707876503358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707876503358</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: insomnia file">
+      <option name="closed" value="true" />
+      <created>1707876770818</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707876770818</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs: updated readme.md">
+      <option name="closed" value="true" />
+      <created>1707877241316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707877241316</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docs: updated insomnia file">
+      <option name="closed" value="true" />
+      <created>1707877251845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707877251845</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs: updated readme.md">
+      <option name="closed" value="true" />
+      <created>1707877513314</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707877513314</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: added server">
+      <option name="closed" value="true" />
+      <created>1707879267017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879267017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: configured gateway to route the server.">
+      <option name="closed" value="true" />
+      <created>1707879294243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879294243</updated>
+    </task>
+    <task id="LOCAL-00009" summary="docs: updated readme and insomnia.">
+      <option name="closed" value="true" />
+      <created>1707879317622</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707879317622</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: added client">
+      <option name="closed" value="true" />
+      <created>1707881946539</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707881946539</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor: client's greeting fetch moved to it's own hook.">
+      <option name="closed" value="true" />
+      <created>1707883101029</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707883101029</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: added auth server">
+      <option name="closed" value="true" />
+      <created>1708269343827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708269343828</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor: added auth server">
+      <option name="closed" value="true" />
+      <created>1708269364680</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708269364680</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor: UPDATED auth server">
+      <option name="closed" value="true" />
+      <created>1708272541317</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708272541317</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refactor: changed from 127.0.0.1 to named domains.">
+      <option name="closed" value="true" />
+      <created>1708276507955</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276507955</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor: changed from 127.0.0.1 to named domains.">
+      <option name="closed" value="true" />
+      <created>1708276534235</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708276534235</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor: PKCE">
+      <option name="closed" value="true" />
+      <created>1708282736412</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708282736412</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: PKCE">
+      <option name="closed" value="true" />
+      <created>1708282867483</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708282867483</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: changing to follow springdeveloper example">
+      <option name="closed" value="true" />
+      <created>1711305732645</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1711305732645</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: added spring security to gateway" />
+    <MESSAGE value="Create README.md" />
+    <MESSAGE value="feat: initial gateway" />
+    <MESSAGE value="feat: insomnia file" />
+    <MESSAGE value="docs: updated insomnia file" />
+    <MESSAGE value="docs: updated readme.md" />
+    <MESSAGE value="feat: added server" />
+    <MESSAGE value="feat: configured gateway to route the server." />
+    <MESSAGE value="docs: updated readme and insomnia." />
+    <MESSAGE value="feat: added client" />
+    <MESSAGE value="refactor: client's greeting fetch moved to it's own hook." />
+    <MESSAGE value="refactor: added auth server" />
+    <MESSAGE value="refactor: UPDATED auth server" />
+    <MESSAGE value="refactor: changed from 127.0.0.1 to named domains." />
+    <MESSAGE value="refactor: PKCE" />
+    <MESSAGE value="fix: changing to follow springdeveloper example" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: changing to follow springdeveloper example" />
+  </component>
+</project>
