@@ -9,7 +9,7 @@ export const useGreeting = () => {
 
         axios({
             method: "get",
-            url: "/server",
+            url: "/server/me",
         }).then(response => response.data)
             .then(setMessage)
             .catch((e: unknown) => {
